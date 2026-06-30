@@ -1,0 +1,269 @@
+/* ===========================
+   FLOATING DUST
+=========================== */
+
+@keyframes floatDust{
+
+0%{
+transform:translateY(0px) translateX(0px);
+opacity:.25;
+}
+
+25%{
+transform:translateY(-12px) translateX(8px);
+opacity:.45;
+}
+
+50%{
+transform:translateY(-24px) translateX(-6px);
+opacity:.6;
+}
+
+75%{
+transform:translateY(-10px) translateX(10px);
+opacity:.35;
+}
+
+100%{
+transform:translateY(0px) translateX(0px);
+opacity:.25;
+}
+
+}
+
+.dust1{
+animation:floatDust 8s ease-in-out infinite;
+}
+
+.dust2{
+animation:floatDust 10s ease-in-out infinite;
+animation-delay:1s;
+}
+
+.dust3{
+animation:floatDust 12s ease-in-out infinite;
+animation-delay:2s;
+}
+
+.dust4{
+animation:floatDust 9s ease-in-out infinite;
+animation-delay:3s;
+}
+
+.dust5{
+animation:floatDust 11s ease-in-out infinite;
+animation-delay:4s;
+}
+
+/* ===========================
+BUTTON GLOW
+=========================== */
+
+@keyframes buttonGlow{
+
+0%{
+transform:scale(1);
+box-shadow:0 0 15px rgba(212,175,55,.35);
+}
+
+50%{
+transform:scale(1.05);
+box-shadow:0 0 35px rgba(212,175,55,.75);
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 0 15px rgba(212,175,55,.35);
+}
+
+}
+
+#revealBtn{
+
+animation:buttonGlow 2s infinite;
+
+}
+
+#startBtn{
+
+animation:buttonGlow 2s infinite;
+
+}
+
+/* ===========================
+DRAW SVG
+=========================== */
+
+@keyframes drawLine{
+
+to{
+
+stroke-dashoffset:0;
+
+}
+
+}
+
+/* ===========================
+FOOTPRINTS
+=========================== */
+
+@keyframes footprint{
+
+0%{
+
+opacity:0;
+
+transform:scale(.4);
+
+}
+
+40%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:scale(1.15);
+
+}
+
+}
+
+.fp1{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:.2s;
+
+}
+
+.fp2{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:.8s;
+
+}
+
+.fp3{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:1.4s;
+
+}
+
+.fp4{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:2s;
+
+}
+
+.fp5{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:2.6s;
+
+}
+
+.fp6{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:3.2s;
+
+}
+
+.fp7{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:3.8s;
+
+}
+
+.fp8{
+
+animation:footprint .8s linear forwards;
+
+animation-delay:4.4s;
+
+}
+
+/* ===========================
+FADE IN
+=========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* ===========================
+HEARTBEAT
+=========================== */
+
+@keyframes heartbeat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+25%{
+
+transform:scale(1.05);
+
+}
+
+50%{
+
+transform:scale(1);
+
+}
+
+75%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+#mariyaText{
+
+animation:heartbeat 2.4s infinite;
+
+}
