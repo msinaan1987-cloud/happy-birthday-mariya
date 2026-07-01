@@ -40,8 +40,11 @@ document.getElementById("quoteContainer").style.display = "none";
 
     setTimeout(() => {
 
-       finalMessage.style.visibility = "visible";
-finalMessage.style.opacity = "1";
+       finalMessage.style.display = "flex";
+
+setTimeout(() => {
+    finalMessage.style.opacity = "1";
+}, 50);
 
         finalMessage.style.animation = "fadeIn 1.5s forwards";
 
