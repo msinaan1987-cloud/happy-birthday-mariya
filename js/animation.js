@@ -40,15 +40,10 @@ document.getElementById("quoteContainer").style.display = "none";
 
     setTimeout(() => {
 
-       finalMessage.style.display = "flex";
-
-setTimeout(() => {
+    finalMessage.style.visibility = "visible";
     finalMessage.style.opacity = "1";
-}, 50);
 
-        finalMessage.style.animation = "fadeIn 1.5s forwards";
-
-    }, 6200);
+},6200);
 
     setTimeout(() => {
 
@@ -56,27 +51,19 @@ setTimeout(() => {
 
     }, 7000);
 
-    setTimeout(() => {
-
-        startBtn.style.display = "block";
-
-        startBtn.style.animation = "buttonGlow 2s infinite";
-
-    }, 8200);
+   startBtn.style.animation="buttonGlow 2s infinite";
 
 });
 
-startBtn.addEventListener("click", () => {
-
-    console.log("START BUTTON CLICKED");
+startBtn.onclick = function(){
 
     document.body.style.transition = "1.2s";
     document.body.style.opacity = "0";
 
-    setTimeout(() => {
+    setTimeout(function(){
 
         window.location.href = "pages/hogwarts.html";
 
-    }, 1200);
+    },1200);
 
-});
+};
