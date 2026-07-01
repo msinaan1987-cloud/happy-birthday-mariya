@@ -15,7 +15,9 @@ const startBtn = document.getElementById("startBtn");
 revealBtn.addEventListener("click", () => {
 
     revealBtn.style.display = "none";
-
+    
+document.getElementById("quoteContainer").style.animation = "fadeOut 1s forwards";
+    
     magicContainer.style.display = "block";
 
     footprints.style.display = "block";
