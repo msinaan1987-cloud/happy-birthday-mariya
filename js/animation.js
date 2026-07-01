@@ -32,7 +32,8 @@ revealBtn.addEventListener("click", () => {
 
     setTimeout(() => {
 
-        finalMessage.style.opacity = "1";
+       finalMessage.style.visibility = "visible";
+finalMessage.style.opacity = "1";
 
         finalMessage.style.pointerEvents = "auto";
 
