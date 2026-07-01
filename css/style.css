@@ -371,7 +371,7 @@ position:absolute;
 
 inset:0;
 
-display:flex;
+display:none;
 
 flex-direction:column;
 
@@ -385,11 +385,7 @@ text-align:center;
 
 opacity:0;
 
-pointer-events:none;
-
 z-index:7;
-
-visibility:hidden;
 
 }
 #mariyaText{
