@@ -67,8 +67,9 @@ finalMessage.style.opacity = "1";
 
 startBtn.addEventListener("click", () => {
 
-    document.body.style.transition = "1.2s";
+    console.log("START BUTTON CLICKED");
 
+    document.body.style.transition = "1.2s";
     document.body.style.opacity = "0";
 
     setTimeout(() => {
