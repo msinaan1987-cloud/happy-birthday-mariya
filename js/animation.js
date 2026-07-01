@@ -43,8 +43,6 @@ document.getElementById("quoteContainer").style.display = "none";
        finalMessage.style.visibility = "visible";
 finalMessage.style.opacity = "1";
 
-        finalMessage.style.pointerEvents = "auto";
-
         finalMessage.style.animation = "fadeIn 1.5s forwards";
 
     }, 6200);
@@ -57,7 +55,7 @@ finalMessage.style.opacity = "1";
 
     setTimeout(() => {
 
-        startBtn.style.display = "block";
+        startBtn.style.display = "inline-block";
 
         startBtn.style.animation = "buttonGlow 2s infinite";
 
