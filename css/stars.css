@@ -110,15 +110,11 @@ drop-shadow(0 0 20px gold);
 
 .cat{
 
-position:absolute;
+display:block;
 
-bottom:0;
+width:190px;
 
-left:50%;
-
-transform:translateX(-50%);
-
-width:210px;
+margin:20px auto;
 
 }
 
