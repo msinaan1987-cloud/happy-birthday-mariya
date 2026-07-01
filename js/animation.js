@@ -58,7 +58,7 @@ setTimeout(() => {
 
     setTimeout(() => {
 
-        startBtn.style.display = "inline-block";
+        startBtn.style.display = "block";
 
         startBtn.style.animation = "buttonGlow 2s infinite";
 
