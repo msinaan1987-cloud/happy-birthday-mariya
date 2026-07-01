@@ -17,6 +17,12 @@ revealBtn.addEventListener("click", () => {
     revealBtn.style.display = "none";
     
 document.getElementById("quoteContainer").style.animation = "fadeOut 1s forwards";
+
+    setTimeout(() => {
+
+document.getElementById("quoteContainer").style.display = "none";
+
+},1000);
     
     magicContainer.style.display = "block";
 
