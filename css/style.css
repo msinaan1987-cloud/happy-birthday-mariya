@@ -367,27 +367,35 @@ FINAL MESSAGE
 
 #finalMessage{
 
-position:absolute;
+position:fixed;
 
-inset:0;
+top:0;
+left:0;
 
-display:none;
+width:100%;
+height:100dvh;
+
+display:flex;
 
 flex-direction:column;
 
 justify-content:center;
-
 align-items:center;
-
-padding:25px;
 
 text-align:center;
 
+background:transparent;
+
 opacity:0;
 
-z-index:7;
+visibility:hidden;
+
+transition:opacity 1s ease;
+
+z-index:9999;
 
 }
+
 #mariyaText{
 
 font-size:3rem;
@@ -416,11 +424,11 @@ line-height:1.6;
 
 #startBtn{
 
-position:relative;
+margin-top:30px;
 
-z-index:9999;
+padding:16px 40px;
 
-padding:15px 38px;
+font-size:18px;
 
 border:none;
 
@@ -428,18 +436,12 @@ border-radius:40px;
 
 background:#d4af37;
 
-font-size:1rem;
-
 color:white;
-
-font-family:'Poppins',sans-serif;
 
 cursor:pointer;
 
-box-shadow:
-0 0 20px rgba(212,175,55,.45);
+display:block;
 
-display:none;
+pointer-events:auto;
 
-   pointer-events:auto;
 }
