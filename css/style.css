@@ -445,4 +445,5 @@ box-shadow:
 
 display:none;
 
+   pointer-events:auto;
 }
