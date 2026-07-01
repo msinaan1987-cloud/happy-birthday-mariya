@@ -267,3 +267,16 @@ transform:scale(1);
 animation:heartbeat 2.4s infinite;
 
 }
+
+@keyframes fadeOut{
+
+0%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+transform:scale(.95);
+}
+
+}
