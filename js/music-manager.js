@@ -1,52 +1,51 @@
 const audio = document.getElementById("bgMusic");
 
-if(audio){
+if (audio) {
 
-const savedSong = localStorage.getItem("currentSong");
-const savedTime = localStorage.getItem("currentTime");
+    const source = audio.querySelector("source");
 
-if(savedSong){
+    const savedSong = localStorage.getItem("currentSong");
+    const savedTime = localStorage.getItem("currentTime");
 
-audio.src = savedSong;
+    if (savedSong) {
+        source.src = savedSong;
+        audio.load();
+    }
 
-}
+    audio.addEventListener("loadedmetadata", () => {
 
-audio.addEventListener("loadedmetadata",()=>{
+        if (savedTime) {
+            audio.currentTime = parseFloat(savedTime);
+        }
 
-if(savedTime){
+        audio.play().catch(() => {});
 
-audio.currentTime = parseFloat(savedTime);
+    });
 
-}
+    setInterval(() => {
 
-audio.play().catch(()=>{});
+        localStorage.setItem("currentSong", source.getAttribute("src"));
+        localStorage.setItem("currentTime", audio.currentTime);
 
-});
-
-setInterval(()=>{
-
-localStorage.setItem("currentSong",audio.getAttribute("src"));
-
-localStorage.setItem("currentTime",audio.currentTime);
-
-},1000);
+    }, 1000);
 
 }
 
-function changeMusic(song){
+function changeMusic(song) {
 
-if(!audio) return;
+    if (!audio) return;
 
-audio.pause();
+    const source = audio.querySelector("source");
 
-audio.src = song;
+    source.src = song;
 
-audio.currentTime = 0;
+    audio.load();
 
-audio.play();
+    audio.currentTime = 0;
 
-localStorage.setItem("currentSong",song);
+    audio.play().catch(() => {});
 
-localStorage.setItem("currentTime",0);
+    localStorage.setItem("currentSong", song);
+    localStorage.setItem("currentTime", 0);
 
 }
