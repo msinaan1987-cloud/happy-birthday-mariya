@@ -88,3 +88,84 @@ position:relative;
 transition:.25s;
 
 }
+
+#thankYou{
+
+position:fixed;
+
+inset:0;
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+background:radial-gradient(circle,#ffd5e7,#fff7fb);
+
+z-index:999;
+
+animation:fadeIn .8s;
+
+}
+
+#thankYou h1{
+
+font-size:5rem;
+
+animation:heartbeat 1s infinite;
+
+}
+
+#thankYou h2{
+
+margin-top:20px;
+
+font-size:2rem;
+
+color:#d84f75;
+
+}
+
+#thankYou p{
+
+margin-top:10px;
+
+font-size:1.2rem;
+
+color:#555;
+
+}
+
+@keyframes heartbeat{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+}
