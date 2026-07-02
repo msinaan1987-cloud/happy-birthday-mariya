@@ -47,7 +47,7 @@ document.getElementById("yesBtn").onclick = function(){
 
     question.style.display = "none";
 
-    confetti();
+    confettiBlast();
 
     document.getElementById("thankYou").style.display = "flex";
 
@@ -73,38 +73,18 @@ window.location.href="photo.html";
 
 };
 
-function confetti(){
+function confettiBlast() {
 
-for(let i=0;i<80;i++){
+    confetti({
 
-const c=document.createElement("div");
+        particleCount: 180,
 
-c.innerHTML="🎉";
+        spread: 120,
 
-c.style.position="fixed";
+        startVelocity: 45,
 
-c.style.left=Math.random()*100+"vw";
+        origin: { y: 0.65 }
 
-c.style.top="-20px";
-
-c.style.fontSize="24px";
-
-c.style.transition="3s linear";
-
-document.body.appendChild(c);
-
-setTimeout(()=>{
-
-c.style.top="110vh";
-
-},50);
-
-setTimeout(()=>{
-
-c.remove();
-
-},3000);
-
-}
+    });
 
 }
