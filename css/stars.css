@@ -10,9 +10,11 @@ box-sizing:border-box;
 
 body{
 
-height:100dvh;
+min-height:100dvh;
 
-overflow:hidden;
+overflow-y:auto;
+
+overflow-x:hidden;
 
 background:
 
@@ -46,7 +48,7 @@ opacity:.8;
 
 position:relative;
 
-height:60vh;
+height:45vh;
 
 }
 
@@ -112,9 +114,9 @@ drop-shadow(0 0 20px gold);
 
 display:block;
 
-width:190px;
+width:150px;
 
-margin:20px auto 10px auto;
+margin:10px auto;
 
 }
 
