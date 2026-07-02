@@ -1,3 +1,5 @@
+changeMusic("../assets/music/thousand-years.mp3");
+
 const letter=`
 
 Write your actual love letter here.
