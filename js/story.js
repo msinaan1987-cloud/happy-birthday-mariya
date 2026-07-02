@@ -1,3 +1,5 @@
+changeMusic("../assets/music/harry-potter-love-theme.mp3");
+
 const pages=[
 
 `"It all started on the day you came and sat behind my bench.",
