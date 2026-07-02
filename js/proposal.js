@@ -43,17 +43,21 @@ no.style.transform=`translate(${x}px,${y}px)`;
 
 }
 
-document.getElementById("yesBtn").onclick=function(){
+document.getElementById("yesBtn").onclick = function(){
 
-question.style.display="none";
+    question.style.display = "none";
 
-confetti();
+    confetti();
 
-setTimeout(()=>{
+    document.getElementById("thankYou").style.display = "flex";
 
-second.style.display="block";
+    setTimeout(()=>{
 
-},1200);
+        document.getElementById("thankYou").style.display = "none";
+
+        second.style.display = "block";
+
+    },3000);
 
 };
 
