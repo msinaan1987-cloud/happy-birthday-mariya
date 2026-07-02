@@ -45,6 +45,10 @@ max-width:430px;
 
 width:100%;
 
+max-height:85vh;
+
+overflow-y:auto;
+
 box-shadow:0 20px 50px rgba(0,0,0,.35);
 
 }
@@ -65,13 +69,11 @@ margin-bottom:20px;
 
 #finalText{
 
-font-size:1.25rem;
+font-size:1.2rem;
 
-line-height:1.9;
+line-height:1.7;
 
 white-space:pre-wrap;
-
-min-height:220px;
 
 }
 
