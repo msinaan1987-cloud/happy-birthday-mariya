@@ -171,7 +171,22 @@ That's when I realized how much you meant to me. ❤️
 
 `,
 
-`june 7
+`June 7th.
+
+The award ceremony.
+
+You were wearing a black dress.
+
+Black nail polish.
+
+You looked beautiful.
+
+I couldn't stop looking at you.
+
+Fifteen minutes on my cycle suddenly felt worth it.
+
+Every ride after that felt easier. ❤️
+
 `
 
 ];
