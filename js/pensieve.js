@@ -4,11 +4,7 @@ award:{
 
 title:"The Award Ceremony",
 
-text:"You wore a black dress.
-
-Black nail polish.
-
-And I couldn't stop looking at you."
+text:"You wore a black dress.Black nail polish.And I couldn't stop looking at you."
 
 },
 
@@ -16,11 +12,7 @@ cycle:{
 
 title:"Cycle Ride",
 
-text:"I rode all the way just to see you.
-
-Only for a few seconds.
-
-Yet it felt completely worth it."
+text:"I rode all the way just to see you.Only for a few seconds.Yet it felt completely worth it."
 
 },
 
@@ -28,13 +20,7 @@ sharpener:{
 
 title:"Sharpener Cut",
 
-text:"Nobody noticed.
-
-Nobody asked.
-
-But you did.
-
-And I never forgot it."
+text:"Nobody noticed.Nobody asked.But you did.And I never forgot it."
 
 }
 
