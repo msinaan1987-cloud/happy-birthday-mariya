@@ -1,91 +1,255 @@
-const popup=document.getElementById("popup");
+const pages=[
 
-const popupTitle=document.getElementById("popupTitle");
+`"It all started on the day you came and sat behind my bench.",
 
-const popupText=document.getElementById("popupText");
+"Looking back now, it feels like such a small moment.",
 
-let opened=[];
+"But somehow, it changed everything.",
 
-document.querySelectorAll(".star").forEach(star=>{
+"From that day on, things moved so fast.",
 
-star.onclick=function(){
+"I never imagined that the girl sitting behind me...",
 
-const id=this.dataset.id;
+"Would become someone I could talk to for hours without ever getting bored.",
 
-this.classList.add("active");
+"Little by little, you became a part of my everyday life.",
 
-if(!opened.includes(id))
+"You laughed at my silly jokes.",
 
-opened.push(id);
+"Even the ones that weren't funny.",
 
-switch(id){
+"You listened to me whenever I had something to say.",
 
-case"1":
+"And somehow...",
 
-popupTitle.innerHTML="Reason One ❤️";
+"You always knew how to comfort me whenever I needed it.",
 
-popupText.innerHTML="Write your first reason here.";
+"Those moments may have seemed ordinary.",
 
-break;
+"But they meant so much to me.",
 
-case"2":
+"You made me happier than you probably ever realized.",
 
-popupTitle.innerHTML="Reason Two ❤️";
+"There is one memory that has stayed in my heart all these years.",
 
-popupText.innerHTML="Write your second reason here.";
+"And I don't know if you even remember it.",
 
-break;
+"Back then, my friends and I used to play football with a sharpener during school.",
 
-case"3":
+"One morning, while we were playing...",
 
-popupTitle.innerHTML="My Secret Star ⭐";
+"I got a cut on my leg from its blade.",
 
-popupText.innerHTML="Out of every star in the universe... I love YOU the most.";
+"It hurt.",
 
-break;
+"But what hurt more was that nobody seemed to care.",
 
-case"4":
+"Not even my friends asked me what happened.",
 
-popupTitle.innerHTML="100 Reasons ❤️";
+"But you did.",
 
-let html="<ol>";
+"You were the first person to notice.",
 
-for(let i=1;i<=100;i++){
+"You were the first person to ask me...",
 
-html+="<li>Reason "+i+"</li>";
+"'What happened?'",
+
+"You even asked if I wanted to wrap it up.",
+
+"It might have seemed like a small act of kindness to you.",
+
+"But to me...",
+
+"It was never small.",
+
+"At that moment...",
+
+"I felt seen.",
+
+"I felt cared for.",
+
+"And I felt important.",
+
+"That memory still lives in my heart.",
+
+"Because it was one of the first times I saw how beautiful your heart truly was.",
+
+"As time passed...",
+
+"My feelings for you only grew stronger.",
+
+"Somewhere between our conversations...",
+
+"Your laughter.",
+
+"Your kindness.",
+
+"And all those little moments we shared.",
+
+"I found myself falling deeply in love with you.",
+
+"And the funny thing is...",
+
+"I knew it.",
+
+"I knew exactly how I felt.",
+
+"But I was terrified of telling you.",
+
+"I even prepared a letter.",
+
+"A letter that contained everything I wanted to say.",
+
+"Every feeling.",
+
+"Every hope.",
+
+"Every piece of my heart.",
+
+"But every time I thought about giving it to you...",
+
+"Fear won.",
+
+"I wasn't brave enough back then.",
+
+"I wish I had been.",
+
+"But I wasn't.",
+
+"And then...",
+
+"The last day of school arrived.",
+
+"Out of all the memories from that day.",
+
+"One moment shines brighter than the rest.",
+
+"You gave me a Dairy Milk.",
+
+"To anyone else...",
+
+"It might have looked like a simple chocolate.",
+
+"But to me...",
+
+"It was never just a chocolate.",
+
+"It became a memory.",
+
+"A beautiful memory.",
+
+"A memory I carried with me long after school ended.",
+
+"And even now.",
+
+"After all this time.",
+
+"When I look back at where everything began.",
+
+"I realize that some of the most beautiful chapters of my life...",
+
+"Started with a girl.",
+
+"A girl who simply came and sat behind my bench."
+`,
+
+`"I thought I could get over your absence.",
+
+"I was wrong.",
+
+"Every day felt a little quieter.",
+
+"I kept opening our chats.",
+
+"I kept rereading old messages.",
+
+"I rode my cycle just to see you once.",
+
+"Those few seconds made my entire day.",
+
+"That's when I realized how much you meant to me. ❤️"
+
+`,
+
+`june 7
+`
+
+];
+
+let current=0;
+
+const text=document.getElementById("storyText");
+
+const prev=document.getElementById("prevBtn");
+
+const next=document.getElementById("nextBtn");
+
+function typeWriter(content){
+
+text.innerHTML="";
+
+let i=0;
+
+const timer=setInterval(()=>{
+
+text.innerHTML+=content.charAt(i);
+
+i++;
+
+if(i>=content.length){
+
+clearInterval(timer);
 
 }
 
-html+="</ol>";
-
-popupText.innerHTML=html;
-
-break;
+},25);
 
 }
 
-popup.style.display="flex";
+function loadPage(){
 
-};
+typeWriter(pages[current]);
 
-});
+prev.style.visibility=current===0?"hidden":"visible";
 
-document.getElementById("closeBtn").onclick=function(){
+next.innerText=current===pages.length-1?
 
-popup.style.display="none";
+"Let's See The Stories Of Others"
 
-};
+:
 
-document.getElementById("futureBtn").onclick=function(){
-
-if(opened.length<4){
-
-alert("Have you clicked all the stars? ⭐");
-
-return;
+"Next";
 
 }
 
-window.location.href="future.html";
+next.onclick=function(){
 
-};
+if(current<pages.length-1){
+
+current++;
+
+loadPage();
+
+}
+
+else{
+
+window.location.href="love-stories.html";
+
+}
+
+}
+
+prev.onclick=function(){
+
+if(current>0){
+
+current--;
+
+loadPage();
+
+}
+
+}
+
+loadPage();
