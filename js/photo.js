@@ -9,23 +9,23 @@ const opened=[];
 const memories={
 
 1:{
-title:"Our First Memory ❤️",
-text:"Write your memory here."
+title:"The Memory Literally Stopped My Haert ❤️",
+text:"Do You Remember that Anandu Proposed you??For a second i thought I'm Dead.But you said you rejected. That made me feel Alive again."
 },
 
 2:{
-title:"The Funniest Moment 😂",
-text:"Write your memory here."
+title:"The Day I Realized Your Beauty 😂",
+text:"That award ceremony.You kept saying you weren't beautiful.I spent the entire day thinking the opposite."
 },
 
 3:{
 title:"A Moment I'll Never Forget 💖",
-text:"Write your memory here."
+text:"When i rode the cycle To your house.I didn't Know Where would I End up.But i wanted to see you Soo Badly."
 },
 
 4:{
 title:"One More Forever Memory 🌸",
-text:"Write your memory here."
+text:"A few seconds seeing you was enough to make an entire day better."
 }
 
 };
