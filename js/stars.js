@@ -270,7 +270,7 @@ popup.style.display="flex";
 
 };
 
-});
+);
 
 document.getElementById("closeBtn").onclick=function(){
 
