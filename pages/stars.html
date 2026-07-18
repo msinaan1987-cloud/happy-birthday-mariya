@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Our Memories ❤️</title>
 
-<title>Things I Love About You</title>
-
-<link rel="stylesheet" href="../css/stars.css">
+<link rel="stylesheet" href="../css/photo.css">
 
 </head>
 
 <body>
 
-<h1>
+<div class="container">
 
-Things I Love About You
+<h1>One Photo.</h1>
 
-</h1>
+<h2>A Thousand Memories ❤️</h2>
 
-<p>
+<img
+src="../assets/images/us.png"
+class="photo"
+alt="Our Photo">
 
-Touch every star ✨
+<div class="giftArea">
 
-</p>
+<div class="gift" data-id="1">🎁</div>
 
-<div class="sky">
+<div class="gift" data-id="2">🎁</div>
 
-<div class="star" data-id="1">⭐</div>
+<div class="gift" data-id="3">🎁</div>
 
-<div class="star" data-id="2">⭐</div>
-
-<div class="star secret" data-id="3">🌟</div>
-
-<div class="star" data-id="4">⭐</div>
+<div class="gift" data-id="4">🎁</div>
 
 </div>
 
-  <img
-src="../assets/gifs/cat-pointing.gif"
-class="cat"
-alt="Cat">
-  
+<button id="continueBtn">
+
+Continue ❤️
+
+</button>
+
+</div>
+
 <div id="popup">
 
-<div class="card">
+<div class="memoryCard">
 
-<h2 id="popupTitle"></h2>
+<h2 id="memoryTitle"></h2>
 
-<div id="popupText"></div>
+<p id="memoryText"></p>
 
-<button id="closeBtn">
+<button id="closeMemory">
 
 Close
 
@@ -63,14 +62,7 @@ Close
 
 </div>
 
-<button id="futureBtn">
-
-Let's Take A Look At Our Future
-
-</button>
-
-<script src="../js/stars.js"></script>
+<script src="../js/photo.js"></script>
 
 </body>
-
 </html>
