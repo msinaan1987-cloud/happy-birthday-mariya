@@ -153,21 +153,21 @@ Started with a girl.
 A girl who simply came and sat behind my bench.
 `,
 
-`"I thought I could get over your absence.",
+`I thought I could get over your absence.
 
-"I was wrong.",
+I was wrong.
 
-"Every day felt a little quieter.",
+Every day felt a little quieter.
 
-"I kept opening our chats.",
+I kept opening our chats.
 
-"I kept rereading old messages.",
+I kept rereading old messages.
 
-"I rode my cycle just to see you once.",
+I rode my cycle just to see you once.
 
-"Those few seconds made my entire day.",
+Those few seconds made my entire day.
 
-"That's when I realized how much you meant to me. ❤️"
+That's when I realized how much you meant to me. ❤️
 
 `,
 
