@@ -26,14 +26,6 @@ I loved you enough to write to the future.
 
 Life must have changed us. Maybe we've grown wiser. Maybe we've faced challenges we couldn't imagine today. Maybe we've celebrated victories together, or maybe we've learned difficult lessons along the way. Whatever happened, I hope we never forgot how everything began.
 
-I hope we still remember the classroom where you sat behind my bench.
-
-I hope we still remember the little conversations that meant so much more than they seemed.
-
-I hope we still remember the Dairy Milk, the award ceremony, the bicycle rides, and all the tiny moments that slowly became some of the happiest memories of my life.
-
-Those memories may have been ordinary to the world, but they were extraordinary to me.
-
 If we're still walking through life together, I hope I still make you laugh the way I always wanted to. I hope I still remind you how beautiful your smile is. I hope that after all these years, you still feel safe, loved, respected, and appreciated every single day.
 
 I hope I've become the man you deserve.
