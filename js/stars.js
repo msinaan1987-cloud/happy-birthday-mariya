@@ -24,7 +24,7 @@ case"1":
 
 popupTitle.innerHTML="Reason One ❤️";
 
-popupText.innerHTML="Write your first reason here.";
+popupText.innerHTML="Your smile makes even my hardest days brighter.";
 
 break;
 
@@ -32,7 +32,7 @@ case"2":
 
 popupTitle.innerHTML="Reason Two ❤️";
 
-popupText.innerHTML="Write your second reason here.";
+popupText.innerHTML="You make me feel understood in a way nobody else does.";
 
 break;
 
