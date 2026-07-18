@@ -4,7 +4,11 @@ award:{
 
 title:"The Award Ceremony",
 
-text:"Write your memory of the award ceremony here."
+text:"You wore a black dress.
+
+Black nail polish.
+
+And I couldn't stop looking at you."
 
 },
 
@@ -12,7 +16,11 @@ cycle:{
 
 title:"Cycle Ride",
 
-text:"Write your cycle ride memory here."
+text:"I rode all the way just to see you.
+
+Only for a few seconds.
+
+Yet it felt completely worth it."
 
 },
 
@@ -20,7 +28,13 @@ sharpener:{
 
 title:"Sharpener Cut",
 
-text:"Write your sharpener cut memory here."
+text:"Nobody noticed.
+
+Nobody asked.
+
+But you did.
+
+And I never forgot it."
 
 }
 
